@@ -21,3 +21,5 @@ const MainNavigation = (props) => {
     </MainHeader>
   );
 };
+
+export default MainNavigation;
