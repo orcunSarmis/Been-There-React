@@ -6,13 +6,13 @@ const Users = () => {
 const USERS = [
     {
     id: 'u1', 
-    name: 'Max P:ower', 
-    image: 'https://www.pexels.com/photo/fashion-photography-of-woman-hands-on-chin-with-glitter-makeup-1081685/', 
+    name: 'Max Power', 
+    image: 'https://unsplash.com/photos/oLAPFDbLkOw', 
     places: 3
     }
 ];
 
-    return <UsersList items={USERS}/>
+    return <UsersList items={USERS} />;
 };
 
 export default Users;
