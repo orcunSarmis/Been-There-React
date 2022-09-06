@@ -7,7 +7,7 @@ const USERS = [
     {
     id: 'u1', 
     name: 'Max Power', 
-    image: 'https://unsplash.com/photos/KKkFVb7nqaw.jpg', 
+    image: 'https://images.pexels.com/photos/185933/pexels-photo-185933.jpeg?cs=srgb&dl=pexels-leah-kelley-185933.jpg&fm=jpg', 
     places: 3
     }
 ];
