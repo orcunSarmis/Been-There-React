@@ -40,6 +40,8 @@ const DUMMY_PLACES = [
 const UpdatePlace = () => {
   const placeId = useParams().placeId;
 
+  const identifiedPlace = DUMMY_PLACES.find((p) => p.id === placeId);
+
   const [formState, inputHandler] = useForm(
     {
       title: {
@@ -54,14 +56,17 @@ const UpdatePlace = () => {
     true
   );
 
-  const identifiedPlace = DUMMY_PLACES.find((p) => p.id === placeId);
+   const placeUpdateSubmitHandler = event => {
+    event.preventDefault();
+    console.log(formState.inputs);
+   } 
 
   if (!identifiedPlace) {
     return <h2 className="center">Could not find place!</h2>;
   }
 
   return (
-    <form className="place-form">
+    <form className="place-form" onSubmit={placeUpdateSubmitHandler}>
       <Input
         id="title"
         element="input"
